@@ -25,4 +25,4 @@ This project is an interactive atom simulation built with HTML, CSS, and JavaScr
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/atom-simulation.git
+   git clone https://github.com/Neo-Ayush-jha/Planet.git
