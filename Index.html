@@ -269,7 +269,7 @@
 
                 const distX = particle.x - centerX;
                 const distY = particle.y - centerY;
-                const distance = Math.sqrt(distX ** 2 + distY ** 2);
+                const distance = Math.sqrt(distX * 2 + distY * 2);
 
                 if (distance > maxDistance) {
                     const angle = Math.atan2(distY, distX);
@@ -290,7 +290,7 @@
             [...protons, ...neutrons].forEach((particle, index) => {
                 const distX = centerX - particle.x;
                 const distY = centerY - particle.y;
-                const distanceToCenter = Math.sqrt(distX ** 2 + distY ** 2);
+                const distanceToCenter = Math.sqrt(distX * 2 + distY * 2);
 
                 if (distanceToCenter > 5) {
                     particle.dx += distX * attractionStrength / distanceToCenter;
@@ -515,4 +515,342 @@
         case 'neodymium':
             atomConfig = { protons: 60, neutrons: 84, electrons: 60 };
             break;
-        case 'prometh
+        case 'promethium':
+            atomConfig = { protons: 61, neutrons: 84, electrons: 61 };
+            break;
+        case 'samarium':
+            atomConfig = { protons: 62, neutrons: 88, electrons: 62 };
+            break;
+        case 'europium':
+            atomConfig = { protons: 63, neutrons: 89, electrons: 63 };
+            break;
+        case 'gadolinium':
+            atomConfig = { protons: 64, neutrons: 93, electrons: 64 };
+            break;
+        case 'terbium':
+            atomConfig = { protons: 65, neutrons: 94, electrons: 65 };
+            break;
+        case 'dysprosium':
+            atomConfig = { protons: 66, neutrons: 97, electrons: 66 };
+            break;
+        case 'holmium':
+            atomConfig = { protons: 67, neutrons: 98, electrons: 67 };
+            break;
+        case 'erbium':
+            atomConfig = { protons: 68, neutrons: 99, electrons: 68 };
+            break;
+        case 'thulium':
+            atomConfig = { protons: 69, neutrons: 100, electrons: 69 };
+            break;
+        case 'ytterbium':
+            atomConfig = { protons: 70, neutrons: 103, electrons: 70 };
+            break;
+        case 'lutetium':
+            atomConfig = { protons: 71, neutrons: 104, electrons: 71 };
+            break;
+        case 'hafnium':
+            atomConfig = { protons: 72, neutrons: 106, electrons: 72 };
+            break;
+        case 'tantalum':
+            atomConfig = { protons: 73, neutrons: 108, electrons: 73 };
+            break;
+        case 'tungsten':
+            atomConfig = { protons: 74, neutrons: 110, electrons: 74 };
+            break;
+        case 'rhenium':
+            atomConfig = { protons: 75, neutrons: 111, electrons: 75 };
+            break;
+        case 'osmium':
+            atomConfig = { protons: 76, neutrons: 114, electrons: 76 };
+            break;
+        case 'iridium':
+            atomConfig = { protons: 77, neutrons: 115, electrons: 77 };
+            break;
+        case 'platinum':
+            atomConfig = { protons: 78, neutrons: 117, electrons: 78 };
+            break;
+        case 'gold':
+            atomConfig = { protons: 79, neutrons: 118, electrons: 79 };
+            break;
+        case 'mercury':
+            atomConfig = { protons: 80, neutrons: 121, electrons: 80 };
+            break;
+        case 'thallium':
+            atomConfig = { protons: 81, neutrons: 123, electrons: 81 };
+            break;
+        case 'lead':
+            atomConfig = { protons: 82, neutrons: 125, electrons: 82 };
+            break;
+        case 'bismuth':
+            atomConfig = { protons: 83, neutrons: 126, electrons: 83 };
+            break;
+        case 'polonium':
+            atomConfig = { protons: 84, neutrons: 125, electrons: 84 };
+            break;
+        case 'astatine':
+            atomConfig = { protons: 85, neutrons: 125, electrons: 85 };
+            break;
+        case 'radon':
+            atomConfig = { protons: 86, neutrons: 136, electrons: 86 };
+            break;
+        case 'francium':
+            atomConfig = { protons: 87, neutrons: 136, electrons: 87 };
+            break;
+        case 'radium':
+            atomConfig = { protons: 88, neutrons: 138, electrons: 88 };
+            break;
+        case 'actinium':
+            atomConfig = { protons: 89, neutrons: 138, electrons: 89 };
+            break;
+        case 'thorium':
+            atomConfig = { protons: 90, neutrons: 142, electrons: 90 };
+            break;
+        case 'protactinium':
+            atomConfig = { protons: 91, neutrons: 141, electrons: 91 };
+            break;
+        case 'uranium':
+            atomConfig = { protons: 92, neutrons: 146, electrons: 92 };
+            break;
+        case 'neptunium':
+            atomConfig = { protons: 93, neutrons: 144, electrons: 93 };
+            break;
+        case 'plutonium':
+            atomConfig = { protons: 94, neutrons: 150, electrons: 94 };
+            break;
+        case 'americium':
+            atomConfig = { protons: 95, neutrons: 151, electrons: 95 };
+            break;
+        case 'curium':
+            atomConfig = { protons: 96, neutrons: 152, electrons: 96 };
+            break;
+        case 'berkelium':
+            atomConfig = { protons: 97, neutrons: 153, electrons: 97 };
+            break;
+        case 'californium':
+            atomConfig = { protons: 98, neutrons: 153, electrons: 98 };
+            break;
+        case 'einsteinium':
+            atomConfig = { protons: 99, neutrons: 157, electrons: 99 };
+            break;
+        case 'fermium':
+            atomConfig = { protons: 100, neutrons: 157, electrons: 100 };
+            break;
+        case 'xenon':
+                    atomConfig = { protons: 54, neutrons: 77, electrons: 54 };
+                    break;
+                case 'cesium':
+                    atomConfig = { protons: 55, neutrons: 78, electrons: 55 };
+                    break;
+                case 'barium':
+                    atomConfig = { protons: 56, neutrons: 81, electrons: 56 };
+                    break;
+                case 'lanthanum':
+                    atomConfig = { protons: 57, neutrons: 82, electrons: 57 };
+                    break;
+                case 'cerium':
+                    atomConfig = { protons: 58, neutrons: 82, electrons: 58 };
+                    break;
+                case 'praseodymium':
+                    atomConfig = { protons: 59, neutrons: 81, electrons: 59 };
+                    break;
+                case 'neodymium':
+                    atomConfig = { protons: 60, neutrons: 84, electrons: 60 };
+                    break;
+                case 'promethium':
+                    atomConfig = { protons: 61, neutrons: 88, electrons: 61 };
+                    break;
+                case 'samarium':
+                    atomConfig = { protons: 62, neutrons: 88, electrons: 62 };
+                    break;
+                case 'europium':
+                    atomConfig = { protons: 63, neutrons: 97, electrons: 63 };
+                    break;
+                case 'gadolinium':
+                    atomConfig = { protons: 64, neutrons: 97, electrons: 64 };
+                    break;
+                case 'terbium':
+                    atomConfig = { protons: 65, neutrons: 98, electrons: 65 };
+                    break;
+                case 'dysprosium':
+                    atomConfig = { protons: 66, neutrons: 97, electrons: 66 };
+                    break;
+                case 'holmium':
+                    atomConfig = { protons: 67, neutrons: 98, electrons: 67 };
+                    break;
+                case 'erbium':
+                    atomConfig = { protons: 68, neutrons: 99, electrons: 68 };
+                    break;
+                case 'thulium':
+                    atomConfig = { protons: 69, neutrons: 99, electrons: 69 };
+                    break;
+                case 'ytterbium':
+                    atomConfig = { protons: 70, neutrons: 103, electrons: 70 };
+                    break;
+                case 'lutetium':
+                    atomConfig = { protons: 71, neutrons: 106, electrons: 71 };
+                    break;
+                case 'hafnium':
+                    atomConfig = { protons: 72, neutrons: 106, electrons: 72 };
+                    break;
+                case 'tantalum':
+                    atomConfig = { protons: 73, neutrons: 108, electrons: 73 };
+                    break;
+                case 'tungsten':
+                    atomConfig = { protons: 74, neutrons: 110, electrons: 74 };
+                    break;
+                case 'rhenium':
+                    atomConfig = { protons: 75, neutrons: 111, electrons: 75 };
+                    break;
+                case 'osmium':
+                    atomConfig = { protons: 76, neutrons: 116, electrons: 76 };
+                    break;
+                case 'iridium':
+                    atomConfig = { protons: 77, neutrons: 115, electrons: 77 };
+                    break;
+                case 'platinum':
+                    atomConfig = { protons: 78, neutrons: 117, electrons: 78 };
+                    break;
+                case 'gold':
+                    atomConfig = { protons: 79, neutrons: 118, electrons: 79 };
+                    break;
+                case 'mercury':
+                    atomConfig = { protons: 80, neutrons: 121, electrons: 80 };
+                    break;
+                case 'thallium':
+                    atomConfig = { protons: 81, neutrons: 123, electrons: 81 };
+                    break;
+                case 'lead':
+                    atomConfig = { protons: 82, neutrons: 125, electrons: 82 };
+                    break;
+                case 'bismuth':
+                    atomConfig = { protons: 83, neutrons: 126, electrons: 83 };
+                    break;
+                case 'polonium':
+                    atomConfig = { protons: 84, neutrons: 125, electrons: 84 };
+                    break;
+                case 'astatine':
+                    atomConfig = { protons: 85, neutrons: 138, electrons: 85 };
+                    break;
+                case 'radon':
+                    atomConfig = { protons: 86, neutrons: 136, electrons: 86 };
+                    break;
+                case 'francium':
+                    atomConfig = { protons: 87, neutrons: 136, electrons: 87 };
+                    break;
+                case 'radium':
+                    atomConfig = { protons: 88, neutrons: 138, electrons: 88 };
+                    break;
+                case 'actinium':
+                    atomConfig = { protons: 89, neutrons: 138, electrons: 89 };
+                    break;
+                case 'thorium':
+                    atomConfig = { protons: 90, neutrons: 142, electrons: 90 };
+                    break;
+                case 'protactinium':
+                    atomConfig = { protons: 91, neutrons: 145, electrons: 91 };
+                    break;
+                case 'uranium':
+                    atomConfig = { protons: 92, neutrons: 146, electrons: 92 };
+                    break;
+                case 'neptunium':
+                    atomConfig = { protons: 93, neutrons: 144, electrons: 93 };
+                    break;
+                case 'plutonium':
+                    atomConfig = { protons: 94, neutrons: 150, electrons: 94 };
+                    break;
+                case 'americium':
+                    atomConfig = { protons: 95, neutrons: 147, electrons: 95 };
+                    break;
+                case 'curium':
+                    atomConfig = { protons: 96, neutrons: 151, electrons: 96 };
+                    break;
+                case 'berkelium':
+                    atomConfig = { protons: 97, neutrons: 152, electrons: 97 };
+                    break;
+                case 'californium':
+                    atomConfig = { protons: 98, neutrons: 153, electrons: 98 };
+                    break;
+                case 'einsteinium':
+                    atomConfig = { protons: 99, neutrons: 157, electrons: 99 };
+                    break;
+                case 'fermium':
+                    atomConfig = { protons: 100, neutrons: 157, electrons: 100 };
+                    break;
+                case 'mendelevium':
+                    atomConfig = { protons: 101, neutrons: 158, electrons: 101 };
+                    break;
+                case 'nobelium':
+                    atomConfig = { protons: 102, neutrons: 159, electrons: 102 };
+                    break;
+                case 'lawrencium':
+                    atomConfig = { protons: 103, neutrons: 159, electrons: 103 };
+                    break;
+                case 'rutherfordium':
+                    atomConfig = { protons: 104, neutrons: 157, electrons: 104 };
+                    break;
+                case 'dubnium':
+                    atomConfig = { protons: 105, neutrons: 162, electrons: 105 };
+                    break;
+                case 'seaborgium':
+                    atomConfig = { protons: 106, neutrons: 163, electrons: 106 };
+                    break;
+                case 'bohrium':
+                    atomConfig = { protons: 107, neutrons: 161, electrons: 107 };
+                    break;
+                case 'hassium':
+                    atomConfig = { protons: 108, neutrons: 162, electrons: 108 };
+                    break;
+                case 'meitnerium':
+                atomConfig = { protons: 109, neutrons: 169, electrons: 109 };
+                    break;
+                case 'darmstadtium':
+                atomConfig = { protons: 110, neutrons: 173, electrons: 110 };
+                    break;
+                case 'roentgenium':
+                atomConfig = { protons: 111, neutrons: 172, electrons: 111 };
+                    break;
+                case 'copernicium':
+                atomConfig = { protons: 112, neutrons: 173, electrons: 112 };
+                    break;
+                case 'nihonium':
+                atomConfig = { protons: 113, neutrons: 175, electrons: 113 };
+                    break;
+                case 'flerovium':
+                atomConfig = { protons: 114, neutrons: 175, electrons: 114 };
+                    break;
+                case 'moscovium':
+                atomConfig = { protons: 115, neutrons: 177, electrons: 115 };
+                    break;
+                case 'livermorium':
+                atomConfig = { protons: 116, neutrons: 177, electrons: 116 };
+                    break;
+                case 'tennessine':
+                atomConfig = { protons: 117, neutrons: 177, electrons: 117 };
+                    break;
+                case 'oganesson':
+                atomConfig = { protons: 118, neutrons: 176, electrons: 118 };
+                    break;
+            }
+            createParticles();
+
+    protons.forEach(p => {
+        p.x = centerX;
+        p.y = centerY;
+    });
+
+    neutrons.forEach(n => {
+        n.x = centerX;
+        n.y = centerY;
+    });
+
+    electrons.forEach(electron => {
+        electron.distance = 80;
+    });
+            createParticles();
+        });
+        
+        createParticles();
+        animate();
+    </script>
+</body>
+</html>
